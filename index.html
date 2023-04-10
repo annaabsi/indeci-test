@@ -798,12 +798,12 @@
         <li class="nav-item" role="presentation">
           <button class="active btn btn-outline-primary btn-lg me-2" id="pills-home-tab" data-bs-toggle="pill"
             data-bs-target="#pills-a" type="button" role="tab" aria-controls="pills-home"
-            aria-selected="true">Positivos</button>
+            aria-selected="true">Personas</button>
         </li>
         <li class="nav-item" role="presentation">
           <button class="btn btn-outline-primary btn-lg me-2" id="pills-profile-tab" data-bs-toggle="pill"
             data-bs-target="#pills-b" type="button" role="tab" aria-controls="pills-profile"
-            aria-selected="false">Fallecidos</button>
+            aria-selected="false">Viviendas</button>
         </li>
       </ul>
       <div class="tab-content" id="pills-tabContent">
@@ -813,18 +813,10 @@
         <div class="tab-pane fade show active" id="pills-a" role="tabpanel" aria-labelledby="pills-home-tab">
           <div class="row">
             <div class="col-md-6">
-              <iframe title="Positivos por región" aria-label="Mapa" id="datawrapper-chart-yeQUb"
-                src="https://datawrapper.dwcdn.net/yeQUb/3/" scrolling="no" frameborder="0"
-                style="width: 0; min-width: 100% !important; border: none;" height="593"></iframe>
-              <script
-                type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();</script>
+              <div class="flourish-embed flourish-map" data-src="visualisation/13324721"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
             </div>
             <div class="col-md-6">
-              <iframe title="Positivos por región" aria-label="table" id="datawrapper-chart-ZsT4c"
-                src="https://datawrapper.dwcdn.net/ZsT4c/5/" scrolling="no" frameborder="0"
-                style="width: 0; min-width: 100% !important; border: none;" height="789"></iframe>
-              <script type="text/javascript">!function () { "use strict"; window.addEventListener("message", (function (e) { if (void 0 !== e.data["datawrapper-height"]) { var t = document.querySelectorAll("iframe"); for (var a in e.data["datawrapper-height"]) for (var r = 0; r < t.length; r++) { if (t[r].contentWindow === e.source) t[r].style.height = e.data["datawrapper-height"][a] + "px" } } })) }();
-              </script>
+              <div class="flourish-embed flourish-table" data-src="visualisation/13367911"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
             </div>
           </div>
         </div>
@@ -1746,7 +1738,7 @@
 
     //https://raw.githubusercontent.com/annaabsi/git-scraper-covid19/main/resultados/covid.json
 
-    d3.json("indeci.json").then(function (d) {
+    d3.json("https://raw.githubusercontent.com/annaabsi/indeci-test/main/indeci.json").then(function (d) {
       var damnificados = parseInt(d["damnificados"]);
       var totalDamnificados = d3.select("#damnificados").append("span").text((damnificados).toLocaleString('id-ID'));
 
