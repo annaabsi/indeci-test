@@ -816,18 +816,53 @@
       <ul class="nav nav-pills mb-5 justify-content-center" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="active btn btn-outline-primary btn-lg me-2" id="pills-home-tab" data-bs-toggle="pill"
-            data-bs-target="#pills-a" type="button" role="tab" aria-controls="pills-home"
-            aria-selected="true">Vivienda</button>
+            data-bs-target="#pills-a" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Vivienda
+            <svg fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" id="house-storm" data-name="Line Color"
+              xmlns="http://www.w3.org/2000/svg" class="icon line-color">
+              <polyline id="secondary" points="18 11 20 7 16 7 18 3"
+                style="fill: none; stroke: rgb(44, 169, 188); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+              </polyline>
+              <rect id="secondary-2" data-name="secondary" x="10" y="15" width="4" height="6"
+                style="fill: none; stroke: rgb(44, 169, 188); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+              </rect>
+              <line id="primary" x1="12" y1="5" x2="4" y2="10.71"
+                style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></line>
+              <path id="primary-2" data-name="primary" d="M6,21V9.29M18,16v5M4,21H20"
+                style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path>
+            </svg>
+          </button>
         </li>
         <li class="nav-item" role="presentation">
           <button class="btn btn-outline-primary btn-lg me-2" id="pills-profile-tab" data-bs-toggle="pill"
-            data-bs-target="#pills-b" type="button" role="tab" aria-controls="pills-profile"
-            aria-selected="false">Educación</button>
+            data-bs-target="#pills-b" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Educación
+            <svg fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" id="school-bag" data-name="Line Color"
+              xmlns="http://www.w3.org/2000/svg" class="icon line-color">
+              <path id="secondary"
+                d="M10,17h4M14,4a1,1,0,0,0-1-1H11a1,1,0,0,0-1,1V5h4Zm4,15h1a1,1,0,0,0,1-1V15H18ZM6,15H4v3a1,1,0,0,0,1,1H6Z"
+                style="fill: none; stroke: rgb(44, 169, 188); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+              </path>
+              <path id="primary"
+                d="M19,9V6a1,1,0,0,0-1-1H6A1,1,0,0,0,5,6V9a2,2,0,0,0,2,2H17A2,2,0,0,0,19,9Zm-2,2H7a2,2,0,0,1-1-.28V20a1,1,0,0,0,1,1H17a1,1,0,0,0,1-1V10.72A2,2,0,0,1,17,11Z"
+                style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path>
+              <line id="secondary-2" data-name="secondary" x1="12" y1="10" x2="12" y2="12"
+                style="fill: none; stroke: rgb(44, 169, 188); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+              </line>
+            </svg>
+          </button>
         </li>
         <li class="nav-item" role="presentation">
           <button class="btn btn-outline-primary btn-lg me-2" id="pills-profile-tab" data-bs-toggle="pill"
-            data-bs-target="#pills-c" type="button" role="tab" aria-controls="pills-profile"
-            aria-selected="false">Salud</button>
+            data-bs-target="#pills-c" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Salud
+            <svg fill="#000000" width="20px" height="20px" viewBox="0 0 24 24" id="hospital-2" data-name="Line Color"
+              xmlns="http://www.w3.org/2000/svg" class="icon line-color">
+              <path id="secondary" d="M15,11V7m2,2H13m0,12h4V15H13Z"
+                style="fill: none; stroke: rgb(44, 169, 188); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;">
+              </path>
+              <path id="primary"
+                d="M9,21H21V4a1,1,0,0,0-1-1H10A1,1,0,0,0,9,4Zm0,0H21V4a1,1,0,0,0-1-1H10A1,1,0,0,0,9,4ZM9,6H4A1,1,0,0,0,3,7V20a1,1,0,0,0,1,1H9ZM3,21H9V6H4A1,1,0,0,0,3,7Z"
+                style="fill: none; stroke: rgb(0, 0, 0); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path>
+            </svg>
+          </button>
         </li>
       </ul>
       <div class="tab-content" id="pills-tabContent">
@@ -838,13 +873,13 @@
           <div class="row">
             <div class="col-md-6">
               <div class="total-box">
-                <p class="total-title">Destruidas</p>
+                <p class="total-title" style="color: #c11f1f">Destruidas</p>
                 <p class="total-number">5.283<span class="total-number-sub"> viviendas</span></p>
                 <br>
-                <p class="total-title">Inhabitables</p>
+                <p class="total-title" style="color: #ff8800">Inhabitables</p>
                 <p class="total-number">10.085<span class="total-number-sub"> viviendas</span></p>
                 <br>
-                <p class="total-title">Afectadas</p>
+                <p class="total-title" style="color: #ffc502">Afectadas</p>
                 <p class="total-number">94.443<span id="fallecidos"></span><span class="total-number-sub"> viviendas</span></p>
               </div>
             </div>
@@ -857,13 +892,13 @@
           <div class="row">
             <div class="col-md-6">
               <div class="total-box">
-                <p class="total-title">Destruidas</p>
+                <p class="total-title" style="color: #c11f1f">Destruidas</p>
                 <p class="total-number">100<span id="damnificados"></span><span class="total-number-sub"> aulas</span></p>
                 <br>
-                <p class="total-title">Inhabitables</p>
+                <p class="total-title" style="color: #ff8800">Inhabitables</p>
                 <p class="total-number">438<span id="afectados"></span><span class="total-number-sub"> aulas</span></p>
                 <br>
-                <p class="total-title">Afectadas</p>
+                <p class="total-title" style="color: #ffc502">Afectadas</p>
                 <p class="total-number">1.804<span id="fallecidos"></span><span class="total-number-sub"> aulas</span></p>
               </div>
             </div>
@@ -876,13 +911,13 @@
           <div class="row">
             <div class="col-md-6">
               <div class="total-box">
-                <p class="total-title">Destruidos</p>
+                <p class="total-title" style="color: #c11f1f">Destruidos</p>
                 <p class="total-number">8<span class="total-number-sub"> EE.SS.</span></p>
                 <br>
-                <p class="total-title">Inhabitables</p>
+                <p class="total-title" style="color: #ff8800">Inhabitables</p>
                 <p class="total-number">26<span class="total-number-sub"> EE.SS.</span></p>
                 <br>
-                <p class="total-title">Afectados</p>
+                <p class="total-title" style="color: #ffc502">Afectados</p>
                 <p class="total-number">273<span class="total-number-sub"> EE.SS.</span></p>
               </div>
             </div>
